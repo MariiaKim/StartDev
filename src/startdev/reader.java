@@ -7,19 +7,12 @@ package startdev;
 
 /**
  *
- * @author user
+ * @author pupil
  */
-public class StartDev {
+class reader {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-      
-       
-       Task6 task6 = new Task6();
-       task6.run();
+    static String readLine() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
     
 }

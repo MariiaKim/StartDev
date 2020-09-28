@@ -5,18 +5,39 @@
  */
 package startdev;
 
+import java.util.Random;
+
 /**
  *
  * @author user
  */
 public class Task4 {
-    public void run(){
+    public void run() {
         System.out.println("----- Задача 4 ------");
         System.out.println("Создаем одномерный массив  из 10 ячеек типа int, \nзаполняем его случайными ЧЕТНЫМИ числами и выводим \nего значения в цикле");
-        int myArr[] = ;
-        for(){
-            
+       
+        Random random = new Random();
+        int num;              
+        int myArr[] = new int[10];
+        
+        for (int i = 0; i < myArr.length; i++) {
+            do {
+                num = random.nextInt(100 - 0 + 1) + 0;
+            } while (num % 2 == 1);
+            myArr[i] = num;
         }
+        
+        for (int i = 0; i < myArr.length; i++) {
+            System.out.println(i + ". " + myArr[i]);
+        }
+        
+        
         System.out.println("----- конец задачи 4 ------");
     }
 }
+ 
+        
+    
+    
+
+
